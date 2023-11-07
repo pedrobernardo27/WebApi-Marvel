@@ -100,9 +100,9 @@ namespace WebApiMarvelService.Service
 
                 foreach (var evento in eventoEncontrado.data.results)
                 {
-                    strBuilder.AppendLine($"Id: {evento.id}/n" +
-                        $"Titulo: {evento.title}/n" + $"Descrição: {evento.description}/n" +
-                        $"Imagem do Evento: {evento.thumbnail.path}.{evento.thumbnail.extension}&&");
+                    strBuilder.AppendLine($"{evento.id}/n" +
+                        $"{evento.title}/n" + $"{evento.description}/n" +
+                        $"{evento.thumbnail.path}.{evento.thumbnail.extension}&&");
                 }
 
                 novoPersonagem.EventoResult = strBuilder.ToString();
